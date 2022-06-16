@@ -1,3 +1,3 @@
-Contact Command Line Application.
-started for university projects.
---be happy--.
+Contact Command Line Application.\n
+started for university projects.\n
+--be happy--.\n
