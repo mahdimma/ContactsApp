@@ -1,0 +1,3 @@
+﻿  Start.cpp
+C:\Users\MohammadMahdi\source\repos\ContactUser\Start.cpp(46): warning C4715: 'Start::readingFile': not all control paths return a value
+  ContactUser.vcxproj -> C:\Users\MohammadMahdi\source\repos\ContactUser\x64\Debug\ContactUser.exe
