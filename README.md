@@ -2,6 +2,6 @@ Contacts
 ========
 Contacts Command Line Application.
 
-started for university projects.
+started for university project.
 
 --be happy--.
