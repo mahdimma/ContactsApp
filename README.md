@@ -1,4 +1,6 @@
-Contact Command Line Application.
+Contacts
+========
+Contacts Command Line Application.
 
 started for university projects.
 
