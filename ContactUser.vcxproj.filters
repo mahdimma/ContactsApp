@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ContactUser.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Contact.cpp">
@@ -24,7 +24,7 @@
     <ClCompile Include="Contacts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Start.cpp">
+    <ClCompile Include="Tools.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,7 +35,7 @@
     <ClInclude Include="Contacts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Start.h">
+    <ClInclude Include="Tools.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
