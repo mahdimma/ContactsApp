@@ -7,7 +7,7 @@
 #include <vector>
 #include "Contact.h"
 
-class Start
+class Tools
 {
 private:
 	std::string path;
@@ -16,6 +16,8 @@ private:
 	char* convertStrToChar(std::string);
 public:
 	bool directoryExist();
+	int getInput(int, int);
 	std::string getPath();
+	bool toInt(std::string&, int&);
 };
 
