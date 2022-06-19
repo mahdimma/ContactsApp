@@ -1,6 +1,6 @@
 Contacts
 ========
-**Contacts Command Line Application.**
+**Contacts (Command Line Interface (CLI)) Application.**
 
 ## HISTORY
 
@@ -10,13 +10,13 @@ summary of the history of this project: started for university project and This 
 
 save and manage contacts with some informations. New information variables can be easily added.
 
-### informations variable
+### information variables
 
 1) First Name
 2) Last Name
 3) Number
 
-### manage option
+### Management options
 1) add
 2) find (include show)
 3) delete
