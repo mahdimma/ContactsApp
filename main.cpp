@@ -24,7 +24,7 @@ int main()
 	int choise = tools.getInput(0, 1);
 	if (choise)
 	{
-		//save codes
+		contacts.save();
 	}
 	std::cout << "					------------GodSpeed------------";
 	std::chrono::seconds sleep(5);
@@ -34,6 +34,7 @@ int main()
 
 bool menu(Contacts& contacts, Tools& tools)
 {
+
 	std::cout << "					___Contact App___" << std::endl;
 	std::cout << "					type your choise" << std::endl;
 	std::cout << "					1) add a contact" << std::endl;
@@ -45,42 +46,88 @@ bool menu(Contacts& contacts, Tools& tools)
 	std::cout << "					7) delete all contact" << std::endl;
 	std::cout << "					8) Exit" << std::endl;
 
-	int choise = tools.getInput(1, 7);
+	int choise = tools.getInput(1, 8);
 	switch (choise)
 	{
 	case 1:
 	{
-		contacts.add();
+		int choise = 2;
+		do {
+			contacts.add();
+			std::cout << "you want to add another contact?\n1)yes\n2)no\nwhich: ";
+			int choise = tools.getInput(1, 2);
+		} 
+		while (choise == 1);
+		std::cout << "thats clear after 1 seconds...";
+		std::chrono::seconds sleep(1);
+		std::this_thread::sleep_for(sleep);
 		break;
 	}
 	case 2:
-		break;
-	case 3:
-		break;
-	case 4:
 	{
-		int id = contacts.find();
+		int id = contacts.find(1);
 		if (id != -1)
 		{
-			//find menu
+			std::system("cls");
+			contacts.displayAContact(id);
+			std::cout << "thats clear after 3 seconds...";
+			std::chrono::seconds sleep(3);
+			std::this_thread::sleep_for(sleep);
+		}
+		break;
+	}
+	case 3:
+	{
+		int id = contacts.find(2);
+		if (id != -1)
+		{
+			contacts.deleteAContact(id);
+			std::chrono::seconds sleep(3);
+			std::this_thread::sleep_for(sleep);
+		}
+		break;
+	}
+	case 4:
+	{
+		std::system("cls");
+		int id = contacts.find(0);
+		if (id != -1)
+		{
+			contacts.displayAContact(id);
+			contacts.findMenu(id);
+			std::cout << "thats clear after 1 seconds...";
+			std::chrono::seconds sleep(3);
+			std::this_thread::sleep_for(sleep);
 		}
 		break;
 	}
 	case 5:
+	{
+		int id = contacts.find(3);
+		if (id != -1)
+		{
+			contacts.edit(id);
+		}
 		break;
+	}
 	case 6:
 	{
 		contacts.showAll();
 		break;
 	}
 	case 7:
-		break;
-	case 8:
-		return false;
-		break;
-	default:
+	{
+		contacts.deleteAll();
 		break;
 	}
+	case 8:
+	{
+		return false;
+		break;
+	}
+	}
+	std::system("cls");
+	return true;
 }
 
 

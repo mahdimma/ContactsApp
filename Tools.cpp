@@ -7,7 +7,7 @@ bool Tools::directoryExist()
 	char userName[UNLEN + 1];
 	getUserName(userName);
 	//getting Path
-	path= "C:\\Users\\";
+	path = "C:\\Users\\";
 	path = path + std::string(userName) + "\\Documents\\conatactApp\\";
 	bool exist = isPathExist(path);
 	if (!exist)
@@ -41,7 +41,7 @@ int Tools::getInput(int min, int max)
 		{
 			cin >> inpS;
 			int inpI;
-			bool allNumber = toInt(inpS,inpI);
+			bool allNumber = toInt(inpS, inpI);
 			if (!allNumber)
 			{
 				throw 1;
@@ -60,7 +60,7 @@ int Tools::getInput(int min, int max)
 			{
 				std::cout << "write only number: ";
 				continue;
-				
+
 			}
 			case 2:
 			{
@@ -104,11 +104,20 @@ char* Tools::convertStrToChar(std::string str)
 }
 
 //take str and push in inpI. if all of index is number return true else return false
-bool Tools::toInt(std::string& str, int &inpI)
+bool Tools::toInt(std::string& str, int& inpI)
 {
 	int len = int(str.length());
 	int number = 0;
-	for (int i = 0; i < len; i++)
+	bool negativ = false;
+	if (str[0] == '-') 
+	{
+		negativ = true;
+	}
+	else
+	{
+		number += int(str[0] - 48);
+	}
+	for (int i = 1; i < len; i++)
 	{
 		char ch = str[i];
 		if (ch >= 48 && ch <= 57)
@@ -119,6 +128,10 @@ bool Tools::toInt(std::string& str, int &inpI)
 		{
 			return false;
 		}
+	}
+	if (negativ)
+	{
+		number *= -1;
 	}
 	inpI = number;
 	return true;
