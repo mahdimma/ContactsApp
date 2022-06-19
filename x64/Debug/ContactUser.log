@@ -1,3 +1,1 @@
-﻿  ContactUser.cpp
-C:\Users\MohammadMahdi\source\repos\ContactsApp\ContactUser.cpp(68): warning C4715: 'menu': not all control paths return a value
-  ContactUser.vcxproj -> C:\Users\MohammadMahdi\source\repos\ContactsApp\x64\Debug\ContactUser.exe
+﻿C:\Users\MohammadMahdi\source\repos\ContactsApp\ContactUser.vcxproj : error MSB4025: The project file could not be loaded. Could not find file 'C:\Users\MohammadMahdi\source\repos\ContactsApp\ContactUser.vcxproj'.
