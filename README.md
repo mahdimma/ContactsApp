@@ -4,7 +4,7 @@ Contacts
 
 ## HISTORY
 
-summary of the history of this project: started for university project and This code was written by **MohammdMahdi** and **AmirHossein**.
+summary of the history of this project: started for university project and This code was written by **MohammdMahdi(@mahdimma)** and **AmirHosein(@amiirhoceiin)**.
 
 ## Attributes
 
