@@ -111,9 +111,12 @@ bool Contacts::readingFile()
 // 0 for find, 1 for show, 2 for delete, 3 for edit
 int Contacts::find(int mode)
 {
-	std::cout << "Enter the word you are looking for: ";
 	std::string target;
-	cin >> target;
+	std::cout << "Enter the word you are looking for: ";
+	//first for take enter key
+	std::getline(std::cin, target);
+	std::getline(std::cin, target);
+	
 	int len = int(conVect.size());
 	vector <int> finded;
 	for (int i = 0; i < len; i++)
@@ -153,13 +156,17 @@ void Contacts::add()
 	Contact contact;
 	std::string temp;
 	std::cout << "type your contact First Name : ";
-	cin >> temp;
+	//first for take enter key
+	std::getline(std::cin, temp);
+	std::getline(std::cin, temp);
 	contact.setFName(temp);
 	std::cout << "type your contact Last Name : ";
-	cin >> temp;
+	//first for take enter key
+	std::getline(std::cin, temp);
 	contact.setLName(temp);
 	std::cout << "type your contact Number : ";
-	cin >> temp;
+	//first for take enter key
+	std::getline(std::cin, temp);
 	contact.setNumber(temp);
 	conVect.push_back(contact);
 }
@@ -243,7 +250,9 @@ void Contacts::edit(int index)
 			std::cout << "now First name: " << conVect[index].getFName() << std::endl;
 			std::cout << "input your wanted First name for change: ";
 			std::string fn;
-			std::cin >> fn;
+			//first for take enter key
+			std::getline(std::cin, fn);
+			std::getline(std::cin, fn);
 			conVect[index].setFName(fn);
 			break;
 		}
@@ -252,7 +261,9 @@ void Contacts::edit(int index)
 			std::cout << "now Last name: " << conVect[index].getLName() << std::endl;
 			std::cout << "input your wanted Last name for change: ";
 			std::string ln;
-			std::cin >> ln;
+			//first for take enter key
+			std::getline(std::cin, ln);
+			std::getline(std::cin, ln);
 			conVect[index].setLName(ln);
 			break;
 		}
@@ -261,7 +272,9 @@ void Contacts::edit(int index)
 			std::cout << "now Numeber: " << conVect[index].getNumber() << std::endl;
 			std::cout << "input your wanted Numebr for change: ";
 			std::string number;
-			std::cin >> number;
+			//first for take enter key
+			std::getline(std::cin, number);
+			std::getline(std::cin, number);
 			conVect[index].setNumber(number);
 			break;
 		}
