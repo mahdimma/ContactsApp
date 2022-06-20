@@ -161,11 +161,9 @@ void Contacts::add()
 	std::getline(std::cin, temp);
 	contact.setFName(temp);
 	std::cout << "type your contact Last Name : ";
-	//first for take enter key
 	std::getline(std::cin, temp);
 	contact.setLName(temp);
 	std::cout << "type your contact Number : ";
-	//first for take enter key
 	std::getline(std::cin, temp);
 	contact.setNumber(temp);
 	conVect.push_back(contact);
