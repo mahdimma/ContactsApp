@@ -1,6 +1,6 @@
 # Contact Management System
 
-Welcome to the Contact Management System repository! This project is a simple C++ application designed to manage contacts efficiently. It provides functionalities to add, delete, and view contacts, making it a handy tool for personal or small-scale organizational use.
+Welcome to the Contact Management System (in Command Line) repository! This project is a simple C++ application designed to manage contacts efficiently. It provides functionalities to add, delete, and view contacts, making it a handy tool for personal or small-scale organizational use.
 
 ## Table of Contents
 
