@@ -45,9 +45,11 @@ Upon running the application, you will be presented with a menu to perform vario
 
 - **Add Contact**: Enter the details of the new contact.
 - **Delete Contact**: Provide the name or ID of the contact to delete.
+- **Delete All Contact**: Provide delete of all contact.
 - **View Contacts**: Displays all the contacts currently stored.
 - **Search Contact**: Enter a name or part of the name to search for a contact.
 - **Exit**: Closes the application.
+- **Save To File**: save contact in file.
 
 ## Contributing
 
