@@ -44,6 +44,8 @@ To get started with the Contact Management System, follow these steps:
 Upon running the application, you will be presented with a menu to perform various operations:
 
 - **Add Contact**: Enter the details of the new contact.
+- **Edit Contact**: edit the details of the exist contact.
+
 - **Delete Contact**: Provide the name or ID of the contact to delete.
 - **Delete All Contact**: Provide delete of all contact.
 - **View Contacts**: Displays all the contacts currently stored.
