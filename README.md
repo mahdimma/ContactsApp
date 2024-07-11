@@ -24,8 +24,8 @@ To get started with the Contact Management System, follow these steps:
 1. **Clone the repository**:
 
    ```sh
-   git clone https://github.com/mahdimma/contactsApp.git
-   cd contactsApp
+   git clone https://github.com/mahdimma/ContactsApp.git
+   cd ContactsApp
    ```
 
 2. **Compile the project**:
