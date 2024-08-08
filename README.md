@@ -1,21 +1,29 @@
 # Contact Management System
 
-Welcome to the Contact Management System (in Command Line) repository! This project is a simple C++ application designed to manage contacts efficiently. It provides functionalities to add, delete, and view contacts, making it a handy tool for personal or small-scale organizational use.
+Welcome to the Contact Management System (in Command Line) repository! it a handy tool for personal or small-scale organizational use.
+
+## Overview
+
+The Contact Management Application is a C++ program designed to help users manage their personal contacts efficiently. This application allows users to add, view, edit, delete, and search for contacts, as well as save and load contacts from a file. The program features a text-based menu for easy interaction and utilizes object-oriented programming principles for modularity and scalability.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [File-Structure](#file-structure)
+- [Dependencies](#dependencies)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Features
 
-- **Add Contacts**: Easily add new contacts with details such as name, phone number, and email.
-- **Delete Contacts**: Remove contacts that are no longer needed.
-- **View Contacts**: List all contacts stored in the system.
-- **Search Contacts**: Quickly find specific contacts using search functionality.
+- **Add Contacts**: Users can add new contacts by providing a first name, last name, and phone number.
+- **View Contacts**: Users can view all contacts or search for a specific contact by name or phone number.
+- **Edit Contacts**: Users can edit existing contacts by selecting a contact and modifying its details.
+- **Delete Contacts**: Users can delete individual contacts or clear the entire contact list.
+- **Search Contacts**: Users can search for contacts by first name, last name, or phone number.
+- **Save and Load Contacts**: The application saves the contact list to a file when the user exits and loads the contacts from the file when the application starts.
 
 ## Installation
 
@@ -41,17 +49,28 @@ To get started with the Contact Management System, follow these steps:
 
 ## Usage
 
-Upon running the application, you will be presented with a menu to perform various operations:
+Upon running the application, users are presented with a text-based menu where they can select options by entering numbers corresponding to the desired action. The menu includes the following options:
 
-- **Add Contact**: Enter the details of the new contact.
-- **Edit Contact**: edit the details of the exist contact.
+1. **Add a Contact**
+2. **Show a Contact**
+3. **Delete a Contact**
+4. **Find a Contact**
+5. **Edit a Contact**
+6. **Show All Contacts**
+7. **Delete All Contacts**
+8. **Exit**
 
-- **Delete Contact**: Provide the name or ID of the contact to delete.
-- **Delete All Contact**: Provide delete of all contact.
-- **View Contacts**: Displays all the contacts currently stored.
-- **Search Contact**: Enter a name or part of the name to search for a contact.
-- **Exit**: Closes the application.
-- **Save To File**: save contact in file.
+## File-Structure
+
+- `contact.h` and `contact.cpp`: Define the `Contact` class, which encapsulates the details of a single contact.
+- `contacts.h` and `contacts.cpp`: Define the `Contacts` class, which manages a vector of `Contact` objects and provides methods for interacting with the collection.
+- `tools.h` and `tools.cpp`: Define the `Tools` class, which provides utility functions for the application.
+- `main.cpp`: Contains the main function, which initializes the application, handles user input, and coordinates interactions between the `Contacts` and `Tools` classes.
+
+## Dependencies
+
+- Standard C++ libraries
+- Windows-specific libraries for directory operations (Windows.h, lmcons.h)
 
 ## Contributing
 
